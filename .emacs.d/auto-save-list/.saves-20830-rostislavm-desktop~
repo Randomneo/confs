@@ -1,0 +1,12 @@
+/home/rostislavm/local_projects/rp/src/rp/templates/reports/timelog_summary/listPartial.mako
+/home/rostislavm/local_projects/rp/src/rp/templates/reports/timelog_summary/#listPartial.mako#
+/home/rostislavm/local_projects/rp/src/rp/models/config/timelog.py
+/home/rostislavm/local_projects/rp/src/rp/models/config/#timelog.py#
+/home/rostislavm/local_projects/rp/src/rp/models/config/user.py
+/home/rostislavm/local_projects/rp/src/rp/models/config/#user.py#
+/home/rostislavm/local_projects/rp/src/rp/models/tasks.py
+/home/rostislavm/local_projects/rp/src/rp/models/#tasks.py#
+/home/rostislavm/local_projects/rp/src/rp/controllers/reports/daily_worklog_controller.py
+/home/rostislavm/local_projects/rp/src/rp/controllers/reports/#daily_worklog_controller.py#
+/home/rostislavm/.emacs.d/ido.last
+/home/rostislavm/.emacs.d/#ido.last#

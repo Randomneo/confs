@@ -1,0 +1,20 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".childrensalon.com"
+  [url-cookie "visid_incap_1061443" "NKkzNNpASj+o965p3EX0B1UgVFwAAAAAQUIPAAAAAAAX+Ih5CY5AtYTlqW7NbGPY" "Sat, 01 Feb 2020 09:15:16 GMT" "/" ".childrensalon.com" nil])
+ ("www.childrensalon.com"
+  [url-cookie "__country" "ua" "01-Feb-2020 10:32:54.00 GMT" "/" "www.childrensalon.com" nil]
+  [url-cookie "store" "en" "01-Feb-2020 10:32:54.00 GMT" "/" "www.childrensalon.com" nil]
+  [url-cookie "__sst" "10" "01-Feb-2020 10:32:54.00 GMT" "/" "www.childrensalon.com" nil]
+  [url-cookie "currency" "GBP" "01-Feb-2020 10:32:54.00 GMT" "/" "www.childrensalon.com" nil]
+  [url-cookie "frontend" "tvdjnisv2g8ljfhlt9en50ugg5" "08-Feb-2019 10:32:54.00 GMT" "/" "www.childrensalon.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

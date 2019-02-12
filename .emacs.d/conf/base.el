@@ -1,0 +1,110 @@
+(package-initialize)
+(setq-default indent-tabs-mode nil)
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://melpa.org/packages/") t)
+(add-to-list 'package-archives
+	     '("org" . "https://orgmode.org/elpa/") t)
+
+(package-initialize)
+(add-to-list 'load-path
+	     "~/.emacs.d/org-reveal/")
+(require 'ox-reveal)
+(setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-klere-theme")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/heroku-theme")
+
+; HELM COMPANY
+(eval-after-load 'company
+  '(progn
+     (define-key company-mode-map (kbd "C-:") 'helm-company)
+     (define-key company-active-map (kbd "C-:") 'helm-company)))
+
+(setq py-autopep8-options '("--max-line-length=120"))
+(require 'py-autopep8)
+(defun my/python-mode-hook ()
+  (add-to-list 'company-backends 'company-jedi))
+
+(add-to-list 'load-path "~/telega.el")
+(require 'telega)
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mako\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+
+(global-wakatime-mode)
+
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+(setq jedi:complete-on-dot t)
+(add-hook 'after-init-hook 'global-company-mode)
+(company-quickhelp-mode 1)
+;(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;(require 'ethan-wspace)
+;(global-ethan-wspace-mode 1)
+
+(require 'magit)
+(require 'evil)
+(evil-mode 1)
+(require 'evil-mc)
+(global-evil-mc-mode 1)
+
+(add-to-list 'load-path
+	     "~/.emacs.d/elpa/yasnippet-snippets-0.4/"
+	     "~/.emacs.d/elpa/yasnippet-0.13.0/")
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(global-flycheck-mode)
+(setq-default flycheck-flake8-maximum-line-length 10000)
+
+;(add-to-list
+; 'default-frame-alist
+; '(font . "Input Mono-11"))
+;(set-default-font "Roboto Mono-11" nil t)
+(set-default-font "Mononoki-12" nil t)
+(set-face-attribute 'default nil :height 100)
+
+(require 'ace-jump-mode)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+(require 'linum-relative)
+(linum-on)
+
+(setq read-file-name-completion-ignore-case t)
+(require 'ido)
+(ido-mode t)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+(display-time-mode)
+(require 'smart-mode-line)
+(display-time-mode)
+(require 'smart-mode-line)
+(setq powerline-arrow-shape 'curve)
+(setq powerline-default-separator-dir '(right . left))
+(setq sml/theme 'light-powerline)
+(setq sml/mode-width 0)
+(setq sml/name-width 20)
+(rich-minority-mode 1)
+(setf rm-blacklist "")
+(sml/setup)
+(setq column-number-mode t)
+(require 'fill-column-indicator)
+(fci-mode)
+
+;; KEYboard
+(global-set-key (kbd "C-<tab>") 'company-complete)
+(global-set-key (kbd "C-x g") 'magit-status)
+(with-eval-after-load "python"
+  (define-key python-mode-map (kbd "C-c C-d") 'helm-pydoc))
+
+(show-paren-mode 1)
+(setq show-paren-delay 0)

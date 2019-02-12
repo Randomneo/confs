@@ -1,0 +1,425 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/schedule/" . "today_list/")
+ ("/home/rostislavm/Downloads/" . "global/")
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/recruitment/candidate/" . "activity/")
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/recruitment/" . "candidate/")
+ ("/home/rostislavm/local_projects/rp/src/rp/models/forms/" . "recruitment/")
+ ("/home/rostislavm/local_projects/rp/docker/config/" . "app_config/")
+ ("/home/rostislavm/local_projects/rp/docker/" . "docker-images/")
+ ("/home/rostislavm/local_projects/rp/src/rp/static/js/pimlib/" . "plugins/")
+ ("/home/rostislavm/local_projects/rp/src/rp/static/js/" . "pimlib/")
+ ("/home/rostislavm/local_projects/pimlib/lib/pimlib/form/" . "validators/")
+ ("/home/rostislavm/local_projects/pma/src/pma/utils/" . "grid/")
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/reports/" . "monthly_worklog/")
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/task/" . "list/")
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/account/" . "users/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/base/" . "menu/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/website_campaign/" . "designer/")
+ ("/home/rostislavm/local_projects/rp/src/rp/models/" . "forms/")
+ ("/home/rostislavm/local_projects/rp/src/rp/static/" . "js/")
+ ("/home/rostislavm/local_projects/rp/migration/" . "versions/")
+ ("/home/rostislavm/local_projects/rp/src/rp/controllers/" . "recruitment/")
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/" . "schedule/")
+ ("/home/rostislavm/local_projects/rp/" . "src/")
+ ("/home/rostislavm/local_projects/rp/src/rp/config/" . "routes/")
+ ("/home/rostislavm/local_projects/rp/src/rp/" . "static/")
+ ("/home/rostislavm/local_projects/rp/src/" . "rp/")
+ ("/home/rostislavm/.emacs.d/elpa/" . "py-autopep8-2016.1/")
+ ("/home/rostislavm/local_projects/crm/migration/" . "versions/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/brand_story/" . "select/")
+ ("/home/rostislavm/local_projects/crm/src/crm/api/" . "pma/")
+ ("/home/rostislavm/local_projects/crm/docker/config/" . "app_config/")
+ ("/home/rostislavm/local_projects/crm/docker/" . "config/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/task/tasks/assets/" . "assign/")
+ ("/home/rostislavm/local_projects/crm/src/crm/static/js/pimlib/" . "plugins/")
+ ("/home/rostislavm/local_projects/crm/src/crm/static/js/" . "pimlib/")
+ ("/home/rostislavm/local_projects/crm/src/crm/static/" . "less/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/customer/" . "view/")
+ ("/home/rostislavm/local_projects/crm/src/crm/config/" . "routes/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/sales/return/view/content/" . "panels/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/sales/return/view/" . "content/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/sales/return/" . "view/")
+ ("/home/rostislavm/local_projects/crm/src/crm/controllers/" . "customer_issue/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/sales/order/view/content/panels/" . "shipment/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/sales/order/view/content/" . "panels/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/sales/order/view/" . "content/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/sales/order/" . "view/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/sales/" . "order/")
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/" . "customer_issue/")
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/retrain/automobili-lamborghini/" . "spring-summer-16-shoes/")
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/retrain/aston-martin/" . "spring-summer-16/")
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/retrain/agatha-ruiz-de-la-prada/" . "spring-summer-19-baby/")
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/retrain/a-dee/" . "spring-summer-19/")
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/retrain/" . "automobili-lamborghini/")
+ ("/home/rostislavm/work/eschool/eschool/templates/" . "user/")
+ ("/home/rostislavm/local_projects/crm/src/crm/models/" . "forms/")
+ ("/home/rostislavm/local_projects/crm/src/crm/" . "templates/")
+ ("/home/rostislavm/local_projects/crm/src/" . "crm/")
+ ("/home/rostislavm/local_projects/crm/" . "src/")
+ ("/home/rostislavm/local_projects/pma/src/pma/lib/" . "assets/")
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/report/" . "dashboard/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/base/" . "ajax/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/buyers/brand/" . "field/")
+ ("/home/rostislavm/local_projects/pma/src/pma/models/forms/buyers/" . "brand/")
+ ("/home/rostislavm/local_projects/pma/src/pma/models/forms/" . "buyers/")
+ ("/home/rostislavm/local_projects/pma/migration/" . "versions/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/buyers/collection/" . "field/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/buyers/" . "brand/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/dashboard/" . "blocks/")
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/cdata/" . "imgs/")
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/keras_retinanet/" . "utils/")
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/" . "keras_retinanet/")
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/data/" . "annotations/")
+ ("/home/rostislavm/local_projects/nums/NumNum/" . "NumNum/")
+ ("/home/rostislavm/local_projects/pimlib.imagematching/lib/pimlib/" . "imagematching/")
+ ("/home/rostislavm/local_projects/pimlib.imagematching/lib/" . "pimlib/")
+ ("/home/rostislavm/local_projects/pimlib.imagematching/" . "lib/")
+ ("/home/rostislavm/local_projects/nums/" . "keras-retinanet/")
+ ("/home/rostislavm/.config/awesome-pro/themes/" . "pro-dark/")
+ ("/home/rostislavm/.config/awesome-pro/" . "themes/")
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/task/tasks/buyers_event/" . "task/")
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/task/tasks/" . "buyers_event/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/task/task/" . "list/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/task/tasks/buyers_event/" . "calendar/")
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/task/" . "task/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/task/tasks/" . "assets/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/task/" . "task/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/assets/" . "file_storage/")
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/assets/" . "folders/")
+ ("/home/rostislavm/local_projects/pma/src/pma/config/" . "routes/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/report/" . "dashboard/")
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/" . "utils/")
+ ("/home/rostislavm/local_projects/pma/src/pma/static/js/pimlib/" . "plugins/")
+ ("/home/rostislavm/local_projects/pma/src/pma/static/js/" . "task/")
+ ("/home/rostislavm/local_projects/pma/src/pma/static/" . "js/")
+ ("/home/rostislavm/local_projects/pma/src/pma/models/" . "forms/")
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/buyers/" . "order/")
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/" . "report/")
+ ("/home/rostislavm/local_projects/pma/src/pma/" . "controllers/")
+ ("/home/rostislavm/local_projects/pma/src/" . "pma/")
+ ("/home/rostislavm/local_projects/pma/pma/controllers/buyers/" . "order_line/")
+ ("/home/rostislavm/local_projects/pma/pma/static/js/" . "task/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/utils/" . "assets/")
+ ("/home/rostislavm/local_projects/pma/docker/config/" . "app_config/")
+ ("/home/rostislavm/local_projects/pma/docker/" . "docker-images/")
+ ("/home/rostislavm/.config/awesome/themes/" . "default/")
+ ("/home/rostislavm/.config/awesome/" . "themes/")
+ ("/home/rostislavm/.emacs.d/" . "conf/")
+ ("/home/rostislavm/work/eschool/eschool/models/" . "__pycache__/")
+ ("/home/rostislavm/work/eschool/eschool/" . "templates/")
+ ("/home/rostislavm/work/eschool/" . "eschool/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/task/task/" . "view/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/task/" . "task/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/brand_story/" . "select/")
+ ("/home/rostislavm/.config/" . "awesome/")
+ ("/home/rostislavm/local_projects/pimlib/lib/pimlib/" . "grid/")
+ ("/home/rostislavm/local_projects/pimlib/lib/" . "pimlib/")
+ ("/home/rostislavm/local_projects/pimlib/" . "lib/")
+ ("/" . "home/")
+ ("/home/rostislavm/local_projects/pma/pma/static/" . "js/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/base/" . "ajax/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/categories/" . "sort/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/outfit/" . "edit/")
+ ("/home/rostislavm/local_projects/pma/pma/utils/" . "grid/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/report/" . "statistics/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/assets/" . "items/")
+ ("/home/rostislavm/local_projects/pma/pma/config/" . "routes/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/dashboard/" . "blocks/")
+ ("/home/rostislavm/local_projects/pma/pma/templates/" . "report/")
+ ("/home/rostislavm/local_projects/pma/pma/models/" . "buyers/")
+ ("/home/rostislavm/local_projects/pma/pma/controllers/" . "buyers/")
+ ("/home/rostislavm/local_projects/pma/pma/" . "controllers/")
+ ("/home/rostislavm/local_projects/pma/" . "src/")
+ ("/home/rostislavm/local_projects/" . "rp/")
+ ("/home/" . "rostislavm/")
+ ("/home/rostislavm/work/pma/pma/controllers/buyers/" . "brand/")
+ ("/home/rostislavm/work/pma/pma/api/" . "recommend/")
+ ("/home/rostislavm/work/learn/bs/bower_components/" . "bootstrap/")
+ ("/home/rostislavm/work/learn/bs/" . "scss/")
+ ("/home/rostislavm/work/learn/" . "bs/")
+ ("/home/rostislavm/work/pma/pma/templates/" . "settings/")
+ ("/home/rostislavm/work/pma/pma/controllers/" . "buyers/")
+ ("/home/rostislavm/work/pma/pma/" . "controllers/")
+ ("/home/rostislavm/work/pma/" . "pma/")
+ ("/home/rostislavm/work/banereditor/banereditor/" . "models/")
+ ("/home/rostislavm/work/banereditor/" . "banereditor/")
+ ("/home/rostislavm/work/" . "eschool/")
+ ("/home/rostislavm/" . "local_projects/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/rostislavm/local_projects/rp/src/rp/static/js/"
+ "/home/rostislavm/local_projects/crm/src/crm/"
+ "/home/rostislavm/local_projects/rp/src/rp/config/routes/"
+ "/home/rostislavm/local_projects/rp/src/rp/controllers/recruitment/"
+ "/home/rostislavm/local_projects/rp/src/rp/templates/schedule/today_list/"
+ "/home/rostislavm/local_projects/rp/src/rp/controllers/schedule/"
+ "/home/rostislavm/local_projects/rp/src/rp/templates/schedule/list/"
+ "/home/rostislavm/local_projects/rp/src/rp/templates/recruitment/candidate/"
+ "/home/rostislavm/local_projects/rp/src/rp/controllers/reports/"
+ "/home/rostislavm/local_projects/rp/docker/docker-images/"
+ "/home/rostislavm/local_projects/rp/docker/config/app_config/"
+ "/home/rostislavm/local_projects/rp/docker/docker-images/egg/"
+ "/home/rostislavm/local_projects/rp/docker/"
+ "/home/rostislavm/local_projects/crm/src/crm/controllers/"
+ "/home/rostislavm/local_projects/rp/src/rp/templates/utils/"
+ "/home/rostislavm/local_projects/rp/src/rp/templates/task/"
+ "/home/rostislavm/local_projects/rp/src/rp/models/"
+ "/home/rostislavm/.emacs.d/conf/"
+ "/home/rostislavm/local_projects/rp/src/rp/templates/recruitment/candidate/activity/"
+ "/home/rostislavm/Downloads/global/"
+ "/home/rostislavm/Downloads/mainpage/"
+ "/home/rostislavm/"
+ "/home/rostislavm/local_projects/rp/src/rp/"
+ "/home/rostislavm/local_projects/rp/src/rp/controllers/tasks/"
+ "/home/rostislavm/local_projects/rp/src/rp/templates/task/list/"
+ "/home/rostislavm/local_projects/rp/src/rp/models/forms/recruitment/"
+ "/home/rostislavm/local_projects/rp/src/rp/models/forms/"
+ "/home/rostislavm/local_projects/crm/src/crm/controllers/customer_issue/"
+ "/home/rostislavm/local_projects/crm/src/crm/controllers/customer_note/"
+ "/home/rostislavm/local_projects/crm/src/crm/templates/customer_issue/"
+ "/home/rostislavm/local_projects/crm/src/crm/controllers/customer_address/"
+ "/home/rostislavm/local_projects/crm/src/crm/templates/customer_address/"
+ "/home/rostislavm/local_projects/pimlib/lib/pimlib/grid/"
+ "/home/rostislavm/local_projects/pimlib/lib/pimlib/db/"
+ "/home/rostislavm/local_projects/pma/src/pma/models/"
+ "/home/rostislavm/local_projects/rp/src/rp/controllers/vacation/"
+ "/home/rostislavm/local_projects/pma/src/pma/scripts/"
+ "/home/rostislavm/local_projects/rp/src/rp/templates/project/"
+ "/home/rostislavm/local_projects/rp/migration/versions/"
+ "/home/rostislavm/local_projects/rp/src/rp/controllers/"
+ "/home/rostislavm/local_projects/pma/src/pma/"
+ "/home/rostislavm/local_projects/pma/src/pma/templates/bulk/"
+ "/home/rostislavm/local_projects/pma/src/pma/tasks/"
+ "/home/rostislavm/local_projects/pma/"
+ "/home/rostislavm/local_projects/nums/keras-retinanet/"
+ "/home/rostislavm/local_projects/pimlib.imagematching/lib/pimlib/imagematching/"
+ "/home/rostislavm/local_projects/pimlib/lib/pimlib/utils/"
+ "/home/rostislavm/local_projects/pma/docker/docker-images/"
+ "/home/rostislavm/local_projects/pimlib.imagematching/"
+ "/home/rostislavm/local_projects/pma/docker/config/app_config/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "jq.schedule.js"
+ "__init__.py"
+ "recruitment.py"
+ "view_controller.py"
+ "listPartial.mako"
+ "action_controller.py"
+ "view.mako"
+ "base.py"
+ "list_controller.py"
+ "daily_work_controller.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/customer_stock_request/" (23504 33177 348733 701000) "full/" "../" "./" "audit/" "fields.mako" "list.mako" "listPartial.mako" "edit-ajax.mako" "edit.mako" "new-ajax.mako" "embed.mako" "new.mako")
+
+ ("/home/rostislavm/local_projects/crm/src/crm/scripts/" (23510 50296 871430 506000) "import_customer_reward_profile.py" "import_cod_for_orders.py" "check_boss_auth.py" "import_orders.pyc" "authorize_google.pyc" "sync_customer_segment_status.py" "migrate_social_links.pyc" "import_pma_product_attributes.pyc" "../" "import_desk_cases.py" "create_issues_for_cod_orders.pyc" "authorize_boss.pyc" "system_check.py" "import_customers.pyc" "import_customer_discount_templates.py" "./" "initializedb.pyc" "authorize_google.py" "__init__.py" "migrate_customer_issues_products.pyc" "reindex_search.pyc" "send_customer_with_disallow_card.pyc" "import_returns.pyc" "import_customer_newsletter_subscriptions.py" "import_pma_restricted_brands.py" "import_sales_return_notes.pyc" "import_livechat_gmail.py" "import_cod_for_orders.pyc" "import_customer_browsing_options.pyc" "assets.pyc" "assets.py" "import_customer_newsletter_subscription_preference.pyc" "import_reserved_items.py" "upload_customer_segments.pyc" "recalculate_customer_orders_count.pyc" "authorize_boss.py" "reindex_and_upload_segment.pyc" "import_reserved_items.pyc" "import_exchange_rate.pyc" "migrate_social_links.py" "import_returns.py" "migrate_customer_document_name.pyc" "send_customer_stock_requests.pyc" "send_customer_stock_requests.py" "create_issues_for_cod_orders.py" "import_newsletter_subscription_group.pyc" "mark_sales_return_task_done.py" "reindex_search.py" "import_sales_customer_notes.py" "import_customer_social_connections.pyc" "pimlib_lock_cleanup.pyc" "import_pma_product_attributes.py" "upload_boss_customers.py" "import_boss.pyc" "import_customer_discount_templates.pyc" "import_newsletter_subscription_list.pyc" "import_customer_feedbacks.pyc" "migrate_customer_notes.py" "import_customer_social_connections.py" "customer_refresh.py" "sync_customer_segment_status.pyc" "fix_state_on_customer_address.py" "check_boss_auth.pyc" "upload_customer_segments.py" "initializedb.py" "import_exchange_rate.py" "refresh_customer_segments.py" "system_check.pyc" "fix_state_on_customer_address.pyc" "__init__.pyc" "migrate_customer_notes.pyc" "import_customer_feedbacks.py" "delete_automated_notes_by_date.pyc" "import_newsletter_subscription_group.py" "validate_sales_data.py" "mark_sales_return_task_done.pyc" "customer_refresh.pyc" "import_customer_reward_profile.pyc" "import_sales_customer_notes.pyc" "import_users.pyc" "import_users.py" "upload_boss_customers.pyc" "import_customer_newsletter_subscription_preference.py" "import_orders.py" "expire_user_tokens.pyc" "migrate_customer_document_name.py" "import_customer_browsing_options.py" "import_sales_return_notes.py" "delete_automated_notes_by_date.py" "import_customer_newsletter_subscriptions.pyc" "validate_sales_data.pyc" "import_livechat_gmail.pyc" "pimlib_lock_cleanup.py" "import_pma_restricted_brands.pyc" "send_customer_with_disallow_card.py" "import_newsletter_subscription_list.py" "expire_user_tokens.py" "refresh_customer_segments.pyc" "import_desk_cases.pyc" "migrate_customer_issues_products.py" "recalculate_customer_orders_count.py" "import_customers.py" "import_boss.py")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/config/routes/" (23649 37571 751713 95000) "#recruitment.py#" "project.py" "news.pyc" "news.py" ".#recruitment.py" "team.py~" "../" "task.pyc" "worklog.pyc" "worklog.py" "account.pyc" "reports.py" "./" "custom.py" "team.pyc" "__init__.py" "custom.pyc" "kanban.pyc" "team.py" "static.pyc" "task_list.pyc" "marketing.py" "vacation.pyc" "audit.pyc" "tag.py" "activity.pyc" "recruitment.py" "schedule.py" "activity.py" "company.pyc" "recruitment.pyc" "auth.pyc" "vacation.py" "today.py" "timesheet.py" "kanban.py" "fileupload.pyc" "company.py" "account.py" "schedule.pyc" "vacation.py~" "__init__.pyc" "fileupload.py" "tag.pyc" "auth.py" "timesheet.pyc" "project.pyc" "audit.py" "task_list.py" "today.pyc" "static.py" "reports.pyc" "task.py" "marketing.pyc")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/controllers/recruitment/" (23649 36937 454078 515000) "activity_controller.pyc" "get_calendar.py~" "../" "delete_controller.pyc" "./" "action_controller.py" "delete_controller.py" "__init__.py" "activity_controller.py" "view_controller.py" "list_controller.pyc" "list_controller.py" "get_calendar.py" "action_controller.pyc" "get_calendar.pyc" "view_controller.pyc" "__init__.pyc")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/config/" (23512 6871 714287 603000) "../" "./" "__init__.py" "resources.py" "routes/" "__init__.pyc" "resources.pyc")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/schedule/today_list/" (23649 31916 638246 87000) "../" "./" "list.mako" "listPartial.mako")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/static/js/pimlib/plugins/" (23625 48229 906120 76000) "../" "upload.js" "ajax-load.js" "ajax.js" "./" "watch-changes.js" "grid-widget.js" "progress.js" "forms.js" "modals.js" "list-edit.js" "spin.js" "form-navigation.js" "grid.js")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/static/js/pimlib/" (23512 5712 276809 882000) "base.js" "../" "./" "plugins/")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/static/js/" (23641 45628 36930 985000) "pickmeup.js" "vacation.js~" "../" "teams.js" "./" "jquery.gridfilters.js" "vacation.js" "jq.schedule.js" "pimlib/" "pickmeup.js~" "main.js" "pickmeup.min.js")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/static/" (23625 48229 910120 117000) "sass/" "../" "vendor/" "./" "fonts/" "src/" "favicon.ico" "img/" "css/" "js/")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/schedule/list/" (23625 50415 846404 308000) "../" "./" "list.mako" "listPartial.mako" "quickFilters.mako")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/schedule/" (23625 48229 926120 286000) "../" "./" "list/" "today_list/" "project_list/" "fields.mako" "edit-ajax.mako" "edit.mako" "new-ajax.mako" "new.mako")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/recruitment/candidate/" (23649 24728 757696 841000) "activities.mako" "../" "./" "fields.mako" "list.mako" "view.mako" "listPartial.mako" "edit-ajax.mako" "edit.mako" "new-ajax.mako" "quickFilters.mako" "forms.mako" "new.mako" "activity/" "sidebar.mako")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/controllers/reports/" (23642 43027 680808 289000) "client_monthly_work_controller.pyc" "daily_worklog_controller.py" "daily_work_controller.pyc" "daily_work_controller.py" "monthly_work_controller.pyc" "client_monthly_work_controller.py" "recruitment_controller.pyc" "team_stats_controller.py_" "../" "./" "project_estimate_controller.py" "project_estimate_list_controller.py" "__init__.py" "team_productivity_controller.pyc" "dev_cost/" "recruitment_controller.py" "project_estimate_controller.pyc" "tasks_worklog_controller.py" "timelog_summary.pyc" "client_annual_controller.py" "timelog_summary.py" "timelog_summary.py~" "team_productivity_controller.py" "project_summary_list_controller.pyc" "monthly_work_controller.py" "project_estimate_list_controller.pyc" "__init__.pyc" "annual_controller.py" "project_summary_list_controller.py" "project_summary_controller.py" "tasks_worklog_controller.pyc" "annual_controller.pyc" "client_annual_controller.pyc" "project_summary_controller.pyc" "daily_worklog_controller.pyc" "worklog_summary_controller.py" "worklog_summary_controller.pyc")
+
+ ("/home/rostislavm/" (23649 15851 31861 542000) "my.ics" "0000/" ".Xmodmap" "#shit#" ".emacs~" "shit.org" "test.py" ".cache/" ".viminfo" ".python_history" "../" ".wakatime.log" ".face" "emacs.d_back/" "VirtualBox VMs/" ".mozilla/" "test.cpp" "Templates/" ".dbus/" "Desktop/" ".npm/" "school.org" ".cookiecutters/" "./" ".bashrc" ".keras/" ".weechat/" "Downloads/" ".xscreensaver" ".emacs_back" ".gvfs/" ".gnupg/" ".sqlite_history" ".zcompdump" ".xsessionrc" "test.pyc" ".antigen/" ".w3m/" ".bash_logout" ".ssh/" ".ICEauthority" "confs/" ".conf/" ".sbd/" ".selected_editor" ".emacs" "org/" "work/" "emacs.zip" "antigen.zsh" "antigen/" "test.lisp~" ".psql_history" ".gnome2/" ".xsel.log" "test.lisp" "shit" "local_projects/" ".#shit" "Pictures/" "Documents/" ".vim/" "snap/" ".local/" ".telega/" ".oh-my-zsh/" ".shutter/" ".bash_history" ".wakatime.db" ".pam_environment" ".gphoto/" "path2/" ".xinitrc" ".Xauthority" ".emacs.d/" "telega.el/" ".zshrc.zwc" "Public/" ".gem/" ".lesshst" "tmp/" "test.cpp~" ".mtpaint" ".gconf/" ".gimp-2.8/" "myConf/" "wallpapers/" ".zshrc" ".ipython/" "core" ".purple/" ".thumbnails/" "examples.desktop" ".thunderbird/" "a.out" "shit~" "Videos/" ".gnome/" "todo.org" ".floydconfig" ".Xdefaults" "shit.org~" "test.py~" "oh-my-zsh/" ".zcompdump-rostislavm-desktop-5.4.2" ".sudo_as_admin_successful" ".emacs_back~" ".links2/" ".gitconfig" ".zsh_history" ".cookiecutter_replay/" "Disk2.vmdk" ".config/" "Music/" ".pki/" "projects/" ".xsession-errors" ".profile" ".v8flags.6.2.414.50.rostislavm.json")
+
+ ("/home/rostislavm/local_projects/rp/docker/docker-images/egg/" (23625 48229 882119 824000) "pimlib.egg-link" "../" "./" "rp.egg-link")
+
+ ("/home/rostislavm/local_projects/rp/docker/docker-images/" (23645 23894 354081 982000) "app_config/" "../" "./" "app-requirements.txt" "Dockerfile-pyramid" "app-requirements-additional.txt" "egg/" "app-flower-requirements.txt" "app-requirements-pimlib.txt" "Dockerfile-nginx" "Dockerfile-app" "dev-requirements.txt")
+
+ ("/home/rostislavm/local_projects/rp/docker/data/" (23625 48229 882119 824000) "postgres-data/" ".gitignore" "../" "./" "cache/" "postgres/")
+
+ ("/home/rostislavm/local_projects/rp/docker/config/app_config/" (23625 48229 882119 824000) ".gitignore" "../" "staging.ini" "./" "local.ini~" "supervisord.conf" "local.ini" "development.ini")
+
+ ("/home/rostislavm/local_projects/rp/docker/config/" (23625 48229 882119 824000) "cron.d/" "app_config/" "../" "./" "nginx/" "www/" "ssl/")
+
+ ("/home/rostislavm/local_projects/rp/docker/bin/" (23625 48229 878119 781000) "../" "update_app.sh" "start_all.sh" "merge_alembic.sh" "./" "restart_app.sh" "stop_celery.sh" "stop_app.sh" "restart_upload.sh" "restart_celery.sh" "supervisorctl.sh")
+
+ ("/home/rostislavm/local_projects/rp/deployment/" (23625 48229 878119 781000) "holland/" "cron.d/" "gitlab-patch/" "../" "install_server.txt" "logrotate.d/" "./" "install_vpy.sh" "supervisord.conf" "gitlab/" "openvpn/" "scripts/" "nginx/" "production_hosting.ini" "celery/" "hosts" "install_node.txt")
+
+ ("/home/rostislavm/local_projects/rp/docker/" (23625 48229 882119 824000) ".env.dist" ".gitignore" "../" "./" "docker-compose.local.yml" "cli" "bin/" "logs/" "README.txt" "docker-compose.yml" "config/" "data/" "docker-compose.dev.yml" "docker-images/" ".env")
+
+ ("/home/rostislavm/local_projects/crm/src/crm/" (23501 30576 945754 316000) "tasks/" "static/" "../" "webassets.yaml" "utils/" "./" "__init__.py" "models/" "security.py" "config/" "templates/" "__init__.pyc" "security.pyc" "controllers/" "scripts/" "api/" "lib/")
+
+ ("/home/rostislavm/local_projects/crm/src/" (23383 15709 432491 363000) "../" "./" "crm.egg-info/" "crm/" "crm_celery/")
+
+ ("/home/rostislavm/local_projects/crm/" (23506 60141 846255 148000) ".gitignore" "../" "deployment/" "MANIFEST.in" "./" "CHANGES.txt" "fix_perm.sh" "src/" "migration/" "README.txt" "gulpfile.js" "env/" "setup.cfg" "alembic.ini" "node_modules/" "development.ini" "setup.py" "package.json" "docker/" "crm_search_view_3_triggers.sql" ".git/")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/controllers/schedule/" (23645 17326 253729 789000) "project_list_controller.pyc" "base.pyc" "today_controller.py" "../" "today_controller.pyc" "./" "action_controller.py" "__init__.py" "client_list_controller.pyc" "list_controller.pyc" "client_project_list_controller.py" "list_controller.py" "client_project_list_controller.pyc" "base.py" "action_controller.pyc" "client_list_controller.py" "__init__.pyc" "project_list_controller.py")
+
+ ("/home/rostislavm/local_projects/rp/" (23641 45628 28930 860000) "rp_todo.txt" ".gitignore" "../" "deployment/" "MANIFEST.in" "./" "update_codemirror.sh" "CHANGES.txt" "fix_perm.sh" "src/" "migration/" "README.txt" "gulpfile.js" "setup.cfg" "run_celery_worker.sh" "alembic.ini" "node_modules/" "production.ini" "development.ini" "setup.py" "package.json" "bower.json" "docker/" ".git/")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/utils/" (23625 48229 930120 329000) "../" "security.mako" "workplaces.mako" "./" "grid.mako" "pager.mako" "bootstrap.mako" "form.mako" "helpers.mako" "filters.mako")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/base/" (23641 45628 36930 985000) "footer.mako" "container-ajax.mako" "../" "./" "navigation-accountant.mako" "head.mako" "index.mako" "header.mako" "navigation.mako" "ajax/" "container.mako")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/task/" (23641 45628 36930 985000) "activities.mako" "subtasks.mako" "remote-status-ajax.mako" "../" "commits.mako" "select/" "./" "list/" "fields.mako" "view.mako" "edit-ajax.mako" "edit.mako" "new-ajax.mako" "quickFilters.mako" "estimates.mako" "remote-status.mako" "remote-status-fields.mako" "bulk.mako" "forms.mako" "new.mako" "project/" "activity/" "sidebar.mako")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/" (23641 45628 36930 985000) "tasks/" "static/" "../" "webassets.yaml" "utils/" "./" "__init__.py" "models/" "security.py" "monthly_report.ods" "config/" "templates/" "__init__.pyc" "security.pyc" "controllers/" "scripts/" "lib/")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/models/" (23641 45628 36930 985000) "__pycache__/" "forms/" "utils.pyc" "tags.py" "news.pyc" "news.py" "timesheets.py" "../" "archive.py" "enum.py" "upload.pyc" "tasks.py" "./" "__init__.py" "user_activity.py" "timesheets.pyc" "marketing.py" "teams.pyc" "teams.py" "vacation.pyc" "projects.py" "tags.pyc" "companies.py" "recruitment.py" "projects.pyc" "schedule.py" "filters_config.py" "cache.pyc" "utils.py" "upload.py" "config/" "recruitment.pyc" "teams.py~" "cache.py" "vacation.py" "users.pyc" "schedule.pyc" "vacation.py~" "__init__.pyc" "mailer.py" "user_activity.pyc" "users.py" "archive.pyc" "tasks.pyc" "mailer.pyc" "filters_config.pyc" "companies.pyc" "marketing.pyc" "enum.pyc")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/models/forms/" (23641 44546 103882 303000) "project.py" "news.pyc" "news.py" "team.py~" "marketing/" "../" "task.pyc" "worklog.pyc" "user.pyc" "worklog.py" "./" "switch_user_team.pyc" "team.pyc" "__init__.py" "team.py" "task_list.pyc" "vacation.pyc" "tag.py" "activity.pyc" "user_group.pyc" "schedule.py" "activity.py" "team_role.py~" "switch_user_team.py~" "team_role.pyc" "company.pyc" "vacation.py" "timesheet.py" "company.py" "team_role.py" "schedule.pyc" "vacation.py~" "__init__.pyc" "user.py" "tag.pyc" "client/" "timesheet.pyc" "project.pyc" "task_list.py" "user_group.py" "task.py" "recruitment/" "switch_user_team.py")
+
+ ("/home/rostislavm/.emacs.d/conf/" (23641 45065 42329 368000) "../" "./" "base.el~" "base.el")
+
+ ("/home/rostislavm/.emacs.d/" (23641 45056 254119 411000) "session.10d1a390f1d30b2d97153328174624469800000115930064" "snippets/" "ido.last~" "../" "emacs.d_back/" "session.10aa0f804866d8d68d15329481836830600000025460078" "auto-save-list/" "./" "session.1026540301a784e62d153302066885126900000019470066" "session.10d29f31c352ed2407153303351274545200000020130068" "ido.last" "#ido.last#" "emojis/" "conf/" ".python-environments/" "org-reveal/" "themes/" "elpa/" "url/" "session.10ce3593327398b4a4153250188653597200000015330064")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/recruitment/candidate/activity/" (23641 23121 882774 490000) "../" "./" "fields_assign.mako" "edit-ajax.mako" "edit.mako" "new-ajax.mako" "fields_comment.mako" "new.mako")
+
+ ("/home/rostislavm/work/rus_nn/" (23604 33181 54676 411000) "../" "./" "main.py~" "main.py")
+
+ ("/home/rostislavm/Pictures/" (23636 22625 117364 165000) "2_015.png" "lock.jpg" "Selection_004.png" "4_010.png" "../" "bb1.jpg" "2_021.png~" "3_030.png" "./" "280px-Dacia_SupeRNova_à_Nice_(1).jpg" "2_021.png" "Selection_020.png" "1_001.png" "2_025.png" "2_003.png" "zombiland_saga.png" "Selection_029.png" "Telegram_013.png" "tt.jpg~" "Selection_018.png" "Selection_031.png" "ac55f65f-4327.JPG" "3_024.png" "Selection_032.png" "aa.JPG" "Screenshot.png" "electrodance.jpeg" "2_022.png~" "Selection_008.png" "Selection_007.png" "Dashboard · WakaTime - Chromium_026.png" "2_017.png" "2_028.png" "tt.jpg" "bbraw_norotate.data" "Selection_006.png" "4_009.png" "ac55f65f-4327.jpg" "3_011.png" "2_002.png" "zombiland_saga.png~" "2_019.png" "bb.JPG" "2_023.png" "tt.JPG" "Selection_027.png" "Selection_014.png" "2_005.png" "2_012.png" "Selection_016.png" "eurodance.jpeg" "2_022.png" "lock.png")
+
+ ("/tmp/" (23640 17978 962104 421000) ".XIM-unix/" ".Test-unix/" "systemd-private-c6404c05fc4745beb0c47f39072ff9c1-colord.service-kV9HdG/" "../" "config-err-9L6apg" ".ICE-unix/" ".X11-unix/" "./" "systemd-private-c6404c05fc4745beb0c47f39072ff9c1-rtkit-daemon.service-op3SDl/" "tmux-1000/" "systemd-private-c6404c05fc4745beb0c47f39072ff9c1-bolt.service-eeGnvs/" "systemd-private-c6404c05fc4745beb0c47f39072ff9c1-systemd-timesyncd.service-YkDs1c/" "babel-165096YE/" "systemd-private-c6404c05fc4745beb0c47f39072ff9c1-systemd-resolved.service-mX35Eq/" "ssh-1F3WIBQfTdzK/" "9de2d0b7c1eccb424e035515f4370684-{87A94AB0-E370-4cde-98D3-ACC110C5967D}" ".X1024-lock" "babel-33314zD/" ".org.chromium.Chromium.4NJd6k/" ".font-unix/")
+
+ ("/home/rostislavm/local_projects/pimlib.imagematching/lib/pimlib/" (23615 11616 835482 941000) ".gitignore" "../" "Untitled.ipynb" "./" "__init__.py" "imagematching/" ".ipynb_checkpoints/")
+
+ ("/home/rostislavm/Downloads/global/" (23640 17074 332147 413000) "../" "reset.css" "./" "fonts.css~" "fonts.css")
+
+ ("/home/rostislavm/Downloads/mainpage/" (23640 17229 508419 990000) "../" "./" "text.css" "text.css~" "device.css")
+
+ ("/home/rostislavm/Downloads/" (23640 16532 83221 608000) "resnet50_csv_20.h5" "images/" "fonts/" "unnamed.jpg" "mainpage/" "isc-dhcp-common_4.3.1-6+deb8u3_amd64.deb" "root.x86_64/" ".~lock.Reports_final_list.xlsx#" "candidates_export.csv" "index.html" "pma-1004-15-logs.txt" "autumn-winter-19-pre-collection.zip" "td/" "global/" "src.zip" "Telegram Desktop/" ".~lock.Reports_final_list (1).xlsx#" "../" "./")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/controllers/tags/" (23625 49195 436501 24000) "../" "worklog/" "delete_controller.pyc" "./" "action_controller.py" "delete_controller.py" "__init__.py" "list_controller.pyc" "list_controller.py" "action_controller.pyc" "autocomplete_controller.pyc" "__init__.pyc" "autocomplete_controller.py")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/recruitment/" (23512 5712 292809 964000) "../" "./" "candidate/")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/report/" (23612 46622 493543 25000) "image_improvement.pyc" "assets_controller.py" "cross_site_stock/" "../" "base_controller.pyc" "./" "holy_cow_controller.pyc" "__init__.py" "outdated_measurements.pyc" "image_improvement.py" "product_price_validation_controller.pyc" "statistics.py" "outdated_measurements.py" "empty_categories.pyc" "product_price_validation_controller.py" "brand_issues.pyc" "holy_cow_controller.py" "dashboard/" "merchandising.pyc" "assets_controller.pyc" "dashboard_controller.pyc" "merchandising.py" "brands_check_controller.pyc" "dashboard_controller.py" "__init__.pyc" "product_workflow/" "statistics.pyc" "dashboard.pyc" "brands_check_controller.py" "empty_categories.py" "brand_issues.py")
+
+ ("/home/rostislavm/local_projects/pma/docker/config/app_config/" (23616 40967 483756 837000) ".gitignore" "../" "staging.ini" "./" "supervisord.conf" "taxonomy-selected.en-US.txt" "supervisord-staging.conf" "odbc/" "local.ini" "development.ini")
+
+ ("/home/rostislavm/local_projects/pimlib.imagematching/" (23617 41222 920163 642000) ".gitignore" "../" "develop.sh" "CHANGES" "MANIFEST.in" "./" "LICENSE" "fix_perm.sh" "setup.cfg" "build/" "AUTHORS" "lib/" "setup.py" "update.sh" "README.rst" ".git/")
+
+ ("/home/rostislavm/local_projects/pma/docker/docker-images/" (23616 40967 483756 837000) "app_config/" "../" "app-requirements-keras.txt" "Dockerfile-opencv" "./" "app-requirements.txt" "Dockerfile-pyramid" "app-requirements-additional.txt" "egg/" "app-flower-requirements.txt" "app-requirements-pimlib.txt" "Dockerfile-nginx" "Dockerfile-app" "dev-requirements.txt")
+
+ ("/home/rostislavm/local_projects/pimlib.imagematching/lib/pimlib/imagematching/" (23616 39732 59861 108000) "utils.pyc" "trainset.py" "../" "./" "__init__.py" "algo.pyc" "nnrecognition.py" "digits/" "keras_retinanet/" "algo.py" "utils.py" "__init__.pyc" "nnrecognition.pyc" "nnweights.h5" "trainset.pyc")
+
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/" (23614 2741 159240 238000) "dataset/" "test.py" "keras_retinanet.egg-info/" ".gitignore" ".floydignore" "../" "merge_dataset.py" "trainer.py" "cocotest.py" "./" "LICENSE" "#trainer.py#" ".travis.yml" "CONTRIBUTORS.md" "rename.py~" ".gitmodules" "README.md" "keras_retinanet/" "#test.py#" "validator.py~" ".#validator.py" ".floydexpt" "cocotest.py~" "env/" "floyd.yml" "#validator.py#" "rename.py" "merge_dataset.py~" "setup.cfg" "classes.csv" "resnet50_csv_50.h5" "test/" "build/" "setup.py" "test.py~" "ISSUE_TEMPLATE.md" "resnet50_csv_50_out.h5" "trainer.py~" ".git/" "validator.py")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/tasks/" (23622 62089 559175 298000) "__pycache__/" "collection.pyc" "cross_site_stock_report_save_db.py" "../" "assets_product_mapping.pyc" "assets_outfit_numbers_mapping.pyc" "./" "__init__.py" "dashboard.py" "assets.pyc" "assets.py" "assets_outfit_numbers_mapping.py" "cross_site_stock_report.py" "cross_site_stock_report.pyc" "thumbnails.py" "merchandising.pyc" "assign_category_products.py" "merchandising.py" "thumbnails.pyc" "umeasured_products.py" "collection.py" "image_matching.py" "cross_site_stock_report_save_db.pyc" "assets_mpn_mapping.py" "__init__.pyc" "umeasured_products.pyc" "suggest_category_products.pyc" "dashboard.pyc" "image_matching.pyc" "assets_mpn_mapping.pyc" "assign_category_products.pyc" "suggest_category_products.py")
+
+ ("/home/rostislavm/local_projects/rp/migration/versions/" (23625 48229 882119 824000) "564b2a0716e6_git_updates.py" "47cbadaa15ab_epic_task_type.pyc" "3db3f15d99e8_canceled_task_resolution.pyc" "aee1fabb8c4_recruitment_age.pyc" "23a566e53de0_user_latin_name.pyc" "6c2a71a5fe8c_added_vacation_table.py" "07e831782ab5_worklog_confirmed_by.py" "1712a813952c_added_team_company_many_to_many_relation.py~" "e2465c0c8e54_worklog_tags.pyc" "88a1cca122c7_task_indexes.pyc" "448e2b2987cf_estimate_group_mapping.pyc" "564b2a0716e6_git_updates.pyc" "3db3f15d99e8_canceled_task_resolution.py" "577578422e9a_unique_candidate.py" "bd90cb816160_optimize_indexes.pyc" "daba0aab3b8f_news_date_index.pyc" "bb068dc74920_salary.py" "1c70c12de6ba_db_updates.py" "266103b957cd_social_links.py" "f5fbfb521296_news.pyc" "f5fbfb521296_news.py" "376a4ed68581_worklog_tag_index.pyc" "376a4ed68581_worklog_tag_index.py" "ce13d1f6fdf7_task_lists_multiselect.py" "07e831782ab5_worklog_confirmed_by.pyc" "6004710f9359_user_active_index.pyc" "1712a813952c_added_team_company_many_to_many_relation.pyc" "88a1cca122c7_task_indexes.py" "4f4fb2f64f79_git_integration.pyc" "108a1cca58de_git_index.py" "3c8b9364c83b_git_commit_updates.py" "432215bf2cc7_qa_recruitment.py" "4cdaf97e7020_recruitment_photo.py" "1b70a5d7d9b7_settings_update.py" "770fa2376ed0_mobile_app_developer.pyc" "339946c6fd82_recruitment.py" "339946c6fd82_recruitment.pyc" "135fdc007dac_archive_index.py" "8cc5655313d6_generate_teamroles_and_assign_to_user.py" "1b658f59ef87_project_color_hex.py" "5dedbfed5431_marketing.pyc" "4f919874dba6_accountant_permission.pyc" "123d28f33016_task_estimate.py" "1e5c6d5fc1d6_schedule.pyc" "c987441735e9_news_update.pyc" "4baafea6c7c0_schedule_estimate.pyc" "f2bfcdfb2a1b_task_lists.pyc" "53f92dad6729_tags.py" "770fa2376ed0_mobile_app_developer.py" "a8d553363ff3_task_list_index.py" "29851db835e8_user_group_abbrev.py" "5dedbfed5431_marketing.py" "daba0aab3b8f_news_date_index.py" "1d8a346c7e84_jira_worklog.py" "432215bf2cc7_qa_recruitment.pyc" "11bcc56a98d2_linked_task_status.py" "b43256c8aa5d_added_basecamp_fields_to_project_and_.pyc" "123d28f33016_task_estimate.pyc" "ce13d1f6fdf7_task_lists_multiselect.pyc" "23a566e53de0_user_latin_name.py" "c987441735e9_news_update.py" "5d313c6d1c1b_project_points.py" "64a32b8b7b01_user_index.pyc" "efca8f18d4a1_contact_name.pyc" "c3fdaadb5239_customer_support.py" "5d313c6d1c1b_project_points.pyc" "d14b8d8fd330_task_index.pyc" "1d8a346c7e84_jira_worklog.pyc" "1b658f59ef87_project_color_hex.pyc" "1e5c6d5fc1d6_schedule.py" "250790a6b73b_qa_task_type.py" "64a32b8b7b01_user_index.py" "728d22fb0d47_worklog_tag_title.py" "715f9028713c_added_teams_teamroles_department_tables.pyc" "1b70a5d7d9b7_settings_update.pyc" "6c2a71a5fe8c_added_vacation_table.pyc" "4f919874dba6_accountant_permission.py" "250790a6b73b_qa_task_type.pyc" "4baafea6c7c0_schedule_estimate.py" "108a1cca58de_git_index.pyc" "162cde0a86cf_task_extended_estimates.pyc" "d14b8d8fd330_task_index.py" "53f92dad6729_tags.pyc" "1712a813952c_added_team_company_many_to_many_relation.py" "1c70c12de6ba_db_updates.pyc" "a8d553363ff3_task_list_index.pyc" "715f9028713c_added_teams_teamroles_department_tables.py~" "bb068dc74920_salary.pyc" "47cbadaa15ab_epic_task_type.py" "fb668704f5d9_project_info.py" "561c14a27fc5_candidate_url.pyc" "8cc5655313d6_generate_teamroles_and_assign_to_user.py~" "e2465c0c8e54_worklog_tags.py" "aee1fabb8c4_recruitment_age.py" "fb668704f5d9_project_info.pyc" "46092a93fdaf_tsrange_index.py" "bd90cb816160_optimize_indexes.py" "728d22fb0d47_worklog_tag_title.pyc" "448e2b2987cf_estimate_group_mapping.py" "8cc5655313d6_generate_teamroles_and_assign_to_user.pyc" "266103b957cd_social_links.pyc" "162cde0a86cf_task_extended_estimates.py" "4f4fb2f64f79_git_integration.py" "577578422e9a_unique_candidate.pyc" "3c8b9364c83b_git_commit_updates.pyc" "efca8f18d4a1_contact_name.py" "4cdaf97e7020_recruitment_photo.pyc" "29851db835e8_user_group_abbrev.pyc" "b43256c8aa5d_added_basecamp_fields_to_project_and_.py~" "135fdc007dac_archive_index.pyc" "f2bfcdfb2a1b_task_lists.py" "c3fdaadb5239_customer_support.pyc" "6004710f9359_user_active_index.py" "46092a93fdaf_tsrange_index.pyc" "6c2a71a5fe8c_added_vacation_table.py~" "11bcc56a98d2_linked_task_status.pyc" "561c14a27fc5_candidate_url.py" "715f9028713c_added_teams_teamroles_department_tables.py" "../" "./")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/project/" (23625 48229 922120 244000) "../" "./" "fields.mako" "list.mako" "listPartial.mako" "edit-ajax.mako" "edit.mako" "new-ajax.mako" "quickFilters.mako" "renderers.mako" "bulk.mako" "info/" "new.mako" "task_list/")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/controllers/vacation/" (23625 49195 876497 966000) "../" "./" "action.pyc" "__init__.py" "view.py~" "__init__.py~" "action.py" "__init__.pyc" "view.pyc" "view.py" "action.py~")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/task/list/" (23512 5712 296809 986000) "../" "./" "list.mako" "listPartial.mako" "quickFilters.mako")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/" (23625 48229 922120 244000) "login.mako" "department/" "marketing/" "../" "worklog/" "email/" "utils/" "./" "team/" "reports/" "today/" "schedule/" "audit/" "team_role/" "news/" "timesheet/" "tag/" "task/" "account/" "base/" "dashboard.mako" "client/" "company/" "project/" "vacation/" "recruitment/")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/controllers/tasks/" (23625 49195 700499 189000) "project_list_controller.pyc" "activity_controller.pyc" "commit_controller.pyc" "select_controller.pyc" "../" "delete_controller.pyc" "./" "action_controller.py" "delete_controller.py" "tags_controller.pyc" "__init__.py" "activity_controller.py" "client_list_controller.pyc" "view_controller.py" "list_controller.pyc" "client_project_list_controller.py" "list_controller.py" "client_project_list_controller.pyc" "tags_controller.py" "worklog_controller.py" "action_controller.pyc" "client_list_controller.py" "client_action_controller.py" "commit_controller.py" "client_action_controller.pyc" "select_controller.py" "worklog_controller.pyc" "view_controller.pyc" "__init__.pyc" "project_list_controller.py")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/models/forms/recruitment/" (23566 7950 145172 669000) "../" "./" "action.pyc" "__init__.py" "activity.pyc" "activity.py" "action.py" "__init__.pyc")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/controllers/" (23625 49195 76503 528000) "tasks/" "identicon_controller.py" "account_controller.pyc" "audit_controller.pyc" "today_controller.py" "fileupload_controller.pyc" "user_group/" "department/" "marketing/" "../" "project_controller.py" "newstag/" "today_controller.pyc" "client_project_controller.py" "./" "__init__.py" "team/" "login_controller.pyc" "tags/" "reports/" "login_controller.py" "my_company_controller.pyc" "project_info_controller.py" "schedule/" "team_role/" "news/" "timesheet/" "client_project_controller.pyc" "account_controller.py" "home_controller.py" "project_info_controller.pyc" "company_controller.pyc" "audit_controller.py" "project_controller.pyc" "user/" "filters_preset_controller.py" "my_company_controller.py" "__init__.pyc" "kanban/" "filters_preset_controller.pyc" "fileupload_controller.py" "home_controller.pyc" "task_lists/" "company_controller.py" "vacation/" "identicon_controller.pyc" "recruitment/")
+
+ ("/home/rostislavm/local_projects/crm/src/crm/controllers/customer_note/" (23483 7338 195844 259000) "full/" "audit_controller.pyc" "../" "delete_controller.pyc" "lock.py" "./" "action_controller.py" "delete_controller.py" "__init__.py" "list_controller.pyc" "list_controller.py" "action_controller.pyc" "audit_controller.py" "__init__.pyc" "lock.pyc")
+
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/customer_issue/" (23511 2663 907789 91000) "type/" "../" "email/" "./" "audit/" "fields.mako" "list.mako" "listPartial.mako" "edit-ajax.mako" "edit.mako" "new-ajax.mako" "embed.mako" "new.mako" "template/" "lock/")
+
+ ("/home/rostislavm/local_projects/crm/src/crm/controllers/customer_issue/" (23510 60452 636649 564000) "type/" "audit_controller.pyc" "../" "delete_controller.pyc" "./" "action_controller.py" "delete_controller.py" "__init__.py" "list_controller.pyc" "list_controller.py" "action_controller.pyc" "audit_controller.py" "__init__.pyc" "template/")
+
+ ("/home/rostislavm/local_projects/crm/src/crm/controllers/customer_address/" (23505 28751 501162 359000) "audit_controller.pyc" "../" "delete_controller.pyc" "lock.py" "./" "action_controller.py" "delete_controller.py" "__init__.py" "list_controller.pyc" "list_controller.py" "action_controller.pyc" "order_list.pyc" "audit_controller.py" "__init__.pyc" "lock.pyc")
+
+ ("/home/rostislavm/local_projects/crm/src/crm/controllers/" (23510 50300 23455 864000) "pma_search_controller.pyc" "audit_controller.pyc" "customer_feedback/" "customer_document/" "newsletter_subscription/" "user_activity/" "fileupload_controller.pyc" "user_group/" "../" "sales_reserved_items/" "customer_potentially_trusted/" "customer_child/" "customer_address/" "website_campaign/" "search_controller.pyc" "./" "help_controller.py" "giftcards/" "__init__.py" "customer/" "customer_move_products/" "customer_product_tracking/" "customer_basket/" "customer_wishlist/" "sales_return_note/" "settings/" "sign_on_pma_controller.py" "help_controller.pyc" "delivery_info/" "customer_note/" "customer_activity/" "livechat/" "sales_customer_note/" "home_controller.py" "pma_search_controller.py" "recommend/" "customer_reserved_items/" "mailchimp/" "account/" "audit_controller.py" "desk_case/" "customer_discount/" "customer_potentially_fraud/" "user/" "search_controller.py" "filters_preset_controller.py" "customer_reward_profile/" "sales_return/" "__init__.pyc" "filters_preset_controller.pyc" "fileupload_controller.py" "home_controller.pyc" "ometria/" "customer_reward/" "sign_on_pma_controller.pyc" "customer_issue/" "customer_segment/" "sales_web_order/" "customer_stock_request/" "sales_order/")
+
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/customer_address/" (23504 33177 344733 737000) "../" "./" "audit/" "fields.mako" "list.mako" "listPartial.mako" "edit-ajax.mako" "edit.mako" "new-ajax.mako" "embed.mako" "renderers.mako" "new.mako")
+
+ ("/home/rostislavm/local_projects/crm/src/crm/templates/" (23504 33177 332733 840000) "sign_on_pma.mako" "customer_feedback/" "customer_document/" "newsletter_subscription/" "user_activity/" "../" "customer_potentially_trusted/" "customer_child/" "customer_address/" "website_campaign/" "utils/" "./" "sales/" "giftcards/" "search_suggestions.mako" "customer/" "home.mako" "customer_move_products/" "customer_product_tracking/" "customer_basket/" "customer_wishlist/" "settings/" "reports/" "delivery_info/" "customer_note/" "audit/" "customer_activity/" "dashboard/" "recommend/" "customer_reserved_items/" "mailchimp/" "account/" "desk_case/" "customer_discount/" "customer_potentially_fraud/" "base/" "customer_reward_profile/" "dashboard.mako" "ometria/" "customer_reward/" "live_chat/" "customer_issue/" "customer_segment/" "customer_stock_request/")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/" (23616 41015 264114 46000) "sync_emulation/" "skus/" "sign_on_crm.mako" "product_subscription/" "../" "upload/" "help.mako" "crm_product/" "measurements/" "utils/" "./" "merchandising/" "holy_cow/" "settings/" "spreadsheet/" "useraudit/" "translations/" "audit/" "categories/" "attribute/" "dashboard/" "crm_brand/" "picking_list/" "transifex/" "task/" "assets/" "category_sort_auto/" "account/" "report/" "base/" "buyers/" "country_group/" "color_group/" "products/" "bulk/" "basket/" "soaplog/" "outfit/" "newsletters/" "brand_story/")
+
+ ("/home/rostislavm/local_projects/pimlib/lib/pimlib/grid/" (23625 55147 31791 963000) "exportable.pyc" "../" "generic.pyc" "./" "__init__.py" "bulk_update.py" "static.pyc" "exportable.py" "generic.py" "bulk_update.pyc" "__init__.pyc" "static.py")
+
+ ("/home/rostislavm/local_projects/pimlib/lib/pimlib/db/" (23534 60641 859939 221000) "filters.py" "collection.pyc" "utils.pyc" "mutable.py" "../" "decl_source.pyc" "./" "types.py" "__init__.py" "decl_source.py" "filters.pyc" "decl_enum.py" "data_mapper.pyc" "types.pyc" "utils.py" "collection.py" "decl_enum.pyc" "__init__.pyc" "mutable.pyc" "grouped_collection.py" "view.pyc" "view.py" "grouped_collection.pyc" "data_mapper.py")
+
+ ("/home/rostislavm/local_projects/pimlib/lib/pimlib/" (23449 2951 937199 195000) "web/" "../" "form/" "ui/" "utils/" "auth/" "./" "__init__.py" "injector.py" "cryptutils.pyc" "audit/" "locking/" "db/" "cache.pyc" "catalog/" "cache.py" "cryptutils.py" "__init__.pyc" "patch/" "grid/")
+
+ ("/home/rostislavm/local_projects/pimlib/lib/" (23385 33460 624820 672000) "../" "./" "pimlib.egg-info/" "pimlib/")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/models/" (23616 41254 361919 604000) "__pycache__/" "forms/" "country_group.pyc" "newsletter.py" "views.pyc" "utils.pyc" "measurements.py" "measurements.pyc" "brand_season.pyc" "../" "archive.py" "enum.py" "upload.pyc" "website_stats.pyc" "dynamic_cache.py" "picking_list.pyc" "catalog.pyc" "soap/" "./" "season_statistics.pyc" "__init__.py" "product_basket.py" "product_publishing_validation.pyc" "upload_ext.pyc" "picking_list.py" "spreadsheet.py" "sync_events.py" "stock_report.py" "color_group.pyc" "mapping/" "sync/" "useraudit/" "statistics.py" "upload_ext.py" "boss.py" "category_sort/" "brand_season.py" "boss.pyc" "product_subscription.py" "color_group.py" "outfit.pyc" "catalog.py" "currency.py" "filters_config.py" "transifex/" "cache.pyc" "website_stats.py" "task/" "assets/" "utils.py" "media.py" "xsell.pyc" "upload.py" "config/" "product_import/" "product_publishing_validation.py" "helpers.py" "newsletter.pyc" "sync_events.pyc" "cache.py" "users.pyc" "__init__.pyc" "media.pyc" "buyers/" "product_selection.pyc" "product_subscription.pyc" "statistics.pyc" "season_statistics.py" "users.py" "spreadsheet.pyc" "archive.pyc" "stock_report.pyc" "country_group.py" "views.py" "filters_config.pyc" "outfit.py" "dynamic_cache.pyc" "currency.pyc" "enum.pyc" "product_basket.pyc" "helpers.pyc")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/" (23623 15806 990291 591000) "tasks/" "static/" "hybrid_auth.pyc" "../" "webassets.yaml" "utils/" "soap/" "./" "__init__.py" "models/" "api_auth.pyc" "security.py" "api_auth.py" "config/" "templates/" "__init__.pyc" "security.pyc" "magento/" "controllers/" "scripts/" "api/" "lib/" "hybrid_auth.py")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/scripts/" (23616 41258 77947 862000) "merchrandising.pyc" "update_outfits_visibility.py" "generate_assets_cache.pyc" "export_lookups.py" "transifex.py" "cross_site_stock.pyc" "test_nn.py" "../" "assets_refresh_reference_codes_mapping.pyc" "import_boss_stock.py" "import_bpma_ids.py" "holy_cow.pyc" "update_display_out_of_stock.py" "import_category_translations.pyc" "auto_close_task_assets.py" "import_assets.pyc" "update_buyers_outfits.pyc" "cross_site_stock.py" "update_display_out_of_stock.pyc" "./" "initializedb.pyc" "import_task_buyers_event.pyc" "archive_old_category.pyc" "remove_old_tasks.py" "__init__.py" "auto_assign_category.pyc" "assets_items_exif_data.py" "holy_cow_sync.pyc" "assets_refresh_reference_codes_mapping.py" "bulk_import.pyc" "holy_cow_sync.py" "export_diff_measurements.pyc" "master_product_alert.pyc" "assets.pyc" "clean_measurements.pyc" "auto_assign_category.py" "assets.py" "update_outfits_position.py" "export_boss_stock.pyc" "recalculate_order_prices.pyc" "clean_outfits.py" "export_lookups.pyc" "clear_cross_site_reports.pyc" "scheduled_sync.pyc" "sd_monitoring.pyc" "clean_outfits.pyc" "scheduled_sync.py" "import_boss_stock.pyc" "import_bpma_ids.pyc" "update_order_line_tax_class.pyc" "export_product_images.py" "un_measured_products.py" "product_subscription_update.py" "pimlib_lock_cleanup.pyc" "dataset_generator.pyc" "dataset_generator.py" "import_stock_dates.pyc" "update_buyers_outfits.py" "export_product_images.pyc" "recalculate_order_prices.py" "import_media.pyc" "assets_refresh_product_mapping.pyc" "put_identifiers_to_archive.pyc" "update_order_line_tax_class.py" "clear_cross_site_reports.py" "bulk_import.py" "clear_assets_items.pyc" "import_measurements.pyc" "update_media.pyc" "initializedb.py" "un_measured_products.pyc" "import_buyers_brands.pyc" "recommend.pyc" "archive_old_category.py" "__init__.pyc" "calculate_collection_statistics.pyc" "remove_old_tasks.pyc" "merchrandising.py" "master_product_alert.py" "transifex.pyc" "import_color_group.pyc" "brand_auto_channel.py" "clean_measurements.py" "brand_auto_channel.pyc" "calculate_collection_statistics.py" "export_boss_stock.py" "product_subscription_notify.py" "expire_user_tokens.pyc" "media_archive_update.pyc" "update_measurements_complete.pyc" "put_identifiers_to_archive.py" "auto_close_task_assets.pyc" "clean_color_group.pyc" "product_subscription_notify.pyc" "clear_parent_categories.pyc" "test_nn.pyc" "brand_check_report.pyc" "media_archive_update.py" "update_brand_statuses.pyc" "generate_assets_cache.py" "media_archive_initialize.py" "media_archive_initialize.pyc" "clear_assets_items.py" "product_subscription_update.pyc" "delete_measurements_without_translations.pyc" "pimlib_lock_cleanup.py" "synchronizer.pyc" "expire_user_tokens.py" "synchronizer.py" "collect_statistics.pyc" "update_outfits_position.pyc" "update_outfits_visibility.pyc" "assets_items_exif_data.pyc" "clean_color_group.py" "collect_statistics.py" "recommend.py" "brand_check_report.py")
+
+ ("/home/rostislavm/local_projects/pma/src/" (23422 31914 861308 910000) "../" "./" "pma_celery/" "pma.egg-info/" "pma/")
+
+ ("/home/rostislavm/.conf/" (23621 44918 230365 305000) "../" "./" "basecamp.conf" "basecamp_back.conf")
+
+ ("/home/rostislavm/local_projects/" (23512 11626 366914 538000) "pma-staging/" "../" "./" "crm_media/" "pma_media/" "PickMeUp/" "nums/" "crm-stage/" "rp_media/" "pimlib.imagematching/" "pimlib/" "new/" "crm/" "pma/" "rp/")
+
+ ("/home/rostislavm/local_projects/rp/migration/" (23621 54840 254051 949000) "../" "env.pyc" "./" "README" "env.py" "versions/" "script.py.mako")
+
+ ("/home/rostislavm/local_projects/rp/src/" (23512 6866 514255 245000) "rp_celery/" "../" "rp.egg-info/" "./" "rp/")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/templates/bulk/" (23596 31853 582205 397000) "../" "./" "mark.mako" "list.mako" "marked/" "listPartial.mako" "products.mako" "bulk_scripts.mako" "sidebar.mako" "marked-product.mako")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/buyers/order/" (23608 49825 463557 132000) "audit_controller.pyc" "../" "import_controller.py" "./" "action_controller.py" "__init__.py" "view_controller.py" "list_controller.pyc" "list_controller.py" "action_controller.pyc" "import_controller.pyc" "audit_controller.py" "view_controller.pyc" "__init__.pyc")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/buyers/" (23385 32888 537622 704000) "department/" "../" "order_line/" "./" "__init__.py" "collection/" "order/" "supplier/" "order_supplier_label/" "brand/" "agent/" "__init__.pyc")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/buyers/order_line/" (23616 41256 781938 6000) "cancel_controller.py" "order_lock.pyc" "audit_controller.pyc" "list_full_controller.pyc" "../" "delete_controller.pyc" "totals_controller.pyc" "duplicate_group.py" "./" "action_controller.py" "delete_controller.py" "__init__.py" "group_controller.py" "cancel_controller.pyc" "list_controller.pyc" "list_controller.py" "group_controller.pyc" "totals_controller.py" "export_controller.pyc" "action_controller.pyc" "image_order_controller.py" "audit_controller.py" "image_order_controller.pyc" "export_controller.py" "__init__.pyc" "duplicate_group.pyc" "order_lock.py" "list_full_controller.py")
+
+ ("/home/rostislavm/local_projects/pma/" (23616 41015 264114 46000) ".gitignore" "make_bundle.sh" "../" "deployment/" "MANIFEST.in" "./" "CHANGES.txt" "fix_perm.sh" "src/" "migration/" "README.txt" "setup.cfg" "alembic.ini" "development.ini" "setup.py" "_misc/" "bundle.sh" "docker/" ".git/")
+
+ ("/home/rostislavm/local_projects/pimlib/lib/pimlib/form/validators/" (23608 49525 360982 419000) "tagger.pyc" "../" "generic.pyc" "date_validators.pyc" "date_validators.py" "protected_field.py" "./" "timedelta_validators.pyc" "acl.pyc" "__init__.py" "db.pyc" "tagger.py" "email.py" "generic.py" "protected_field.pyc" "currency.py" "auth.pyc" "country.py" "timedelta_validators.py" "__init__.pyc" "auth.py" "db.py" "email.pyc" "acl.py" "country.pyc" "currency.pyc")
+
+ ("/home/rostislavm/local_projects/pimlib/lib/pimlib/form/" (23608 49525 660985 1000) "config.py" "renderers.py" "../" "crud.py" "./" "__init__.py" "form.pyc" "renderers.pyc" "field_edit.py" "validators/" "static_config.pyc" "schema.pyc" "schema.py" "custom_select.pyc" "crud.pyc" "custom_select.py" "__init__.pyc" "config.pyc" "static_config.py" "field_edit.pyc" "form.py")
+
+ ("/home/rostislavm/local_projects/pimlib/lib/pimlib/utils/" (23608 49526 276990 298000) "exclog.py" "renderers.py" "dates.pyc" "../" "zipper.py" "./" "__init__.py" "renderers.pyc" "timedeltatype.pyc" "taxonomy.py" "unicode_csv.py" "unicode_csv.pyc" "currency.py" "exclog.pyc" "images.pyc" "files.py" "images.py" "timedeltatype.py" "__init__.pyc" "zipper.pyc" "routes.py" "mailer.py" "files.pyc" "dates.py" "mailer.pyc" "routes.pyc" "taxonomy.pyc" "currency.pyc")
+
+ ("/home/rostislavm/local_projects/pma/docker/config/" (23409 13381 308348 50000) "cron.d/" "app_config/" "../" "./" "mongo/" "nginx/" "nginx-stage/" "www/" "ssl/")
+
+ ("/home/rostislavm/local_projects/pma/docker/" (23607 23626 116989 801000) ".env.dist" ".gitignore" "../" "./" "docker-compose.local.yml" "cli" "docker-compose.stage.yml" "bin/" "logs/" "docker-compose.shared.yml" "README.txt" "docker-compose.yml" "config/" "data/" "docker-compose.dev.yml" "docker-images/" ".env")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/report/dashboard/" (23607 23626 116989 801000) "base.pyc" "../" "./" "__init__.pyc")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/controllers/" (23607 25168 73078 705000) "sync_emulation/" "audit_controller.pyc" "useraudit_controller.pyc" "fileupload_controller.pyc" "user_group/" "product_subscription/" "../" "transifex_controller.py" "search_controller.pyc" "crm_product/" "measurements/" "category/" "sign_on_crm_controller.py" "./" "help_controller.py" "__init__.py" "sign_on_crm_controller.pyc" "xsell/" "settings/" "help_controller.pyc" "spreadsheet/" "product/" "sync/" "translations/" "category_sort/" "rest_controller.py" "attribute/" "dashboard/" "crm_brand/" "picking_list/" "home_controller.py" "task/" "assets/" "category_sort_auto/" "brand_sort/" "newsletter/" "account/" "audit_controller.py" "report/" "user/" "search_controller.py" "filters_preset_controller.py" "crm/" "__init__.pyc" "transifex_controller.pyc" "buyers/" "country_group/" "filters_preset_controller.pyc" "fileupload_controller.py" "color_group/" "bulk/" "basket/" "home_controller.pyc" "newsletter_controller.pyc" "simple_product/" "useraudit_controller.py" "outfit/" "brand_story/" "rest_controller.pyc" "product_selection/")
+
+ ("/home/rostislavm/local_projects/pimlib.imagematching/lib/pimlib/imagematching/keras_retinanet/" (23612 28278 300076 240000) "__pycache__/" "backend/" "initializers.py" "preprocessing/" "../" "utils/" "./" "__init__.py" "losses.py" "models/" "callbacks/" "bin/" "layers/" "__init__.pyc" "initializers.pyc" "losses.pyc")
+
+ ("/home/rostislavm/local_projects/pimlib.imagematching/lib/pimlib/imagematching/keras_retinanet/utils/" (23612 28278 308076 315000) "__pycache__/" "keras_version.pyc" "visualization.pyc" "model.pyc" ".gitignore" "model.py" "../" "compute_overlap.pyx" "./" "coco_eval.py" "__init__.py" "anchors.py" "colors.pyc" "compute_overlap.so" "eval.py" "keras_version.py" "visualization.py" "anchors.pyc" "image.pyc" "__init__.pyc" "transform.pyc" "transform.py" "colors.py" "compute_overlap.c" "image.py" "eval.pyc")
+
+ ("/home/rostislavm/local_projects/pimlib/" (23608 49378 119713 855000) ".gitignore" "../" "CHANGES" "MANIFEST.in" "./" "LICENSE" "setup.cfg" "AUTHORS" "lib/" "setup.py" "update.sh" "README.rst" ".git/")
+
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/keras_retinanet/utils/" (23587 17520 964733 66000) "__pycache__/" "keras_version.pyc" "visualization.pyc" "model.pyc" "model.py" "../" "compute_overlap.pyx" "./" "coco_eval.py" "__init__.py" "anchors.py" "colors.pyc" "compute_overlap.so" "eval.py" "keras_version.py" "visualization.py" "anchors.pyc" "image.pyc" "__init__.pyc" "transform.pyc" "transform.py" "colors.py" "compute_overlap.c" "image.py" "eval.pyc")
+
+ ("/home/rostislavm/local_projects/nums/keras-retinanet/keras_retinanet/" (23447 33339 189825 232000) "__pycache__/" "backend/" "initializers.py" "preprocessing/" "../" "utils/" "./" "__init__.py" "losses.py" "models/" "callbacks/" "bin/" "layers/" "__init__.pyc" "initializers.pyc" "losses.pyc")
+
+ ("/home/rostislavm/local_projects/pma/src/pma/utils/" (23607 27928 392865 824000) "measurement.py" "sync_emulation/" "bulk_helper.pyc" "buyers_stats.pyc" "product_hints.py" "../" "product_helper.py" "brand_report.py" "./" "__init__.py" "sysdatetime.py" "user_token.py" "field_edit.py" "date.pyc" "bulk_controller.py" "bulk_controller.pyc" "subscribers.pyc" "subscribers.py" "bulk_helper.py" "currency.py" "measurement.pyc" "task/" "assets/" "locking.pyc" "product_helper.pyc" "helpers.py" "dashboard_stats.pyc" "image.pyc" "importer/" "__init__.pyc" "order_line_totals.pyc" "brand_report.pyc" "user_token.pyc" "buyers_stats.py" "assignee_role/" "locking.py" "field_edit.pyc" "product_hints.pyc" "grid/" "date.py" "sysdatetime.pyc" "dashboard_stats.py" "order_line_totals.py" "image.py" "currency.pyc" "helpers.pyc")
+
+ ("/home/rostislavm/local_projects/rp/src/rp/templates/reports/tasks_worklog/" (23588 62262 702887 920000) "../" "./" "list.mako" "listPartial.mako" "quickFilters.mako")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

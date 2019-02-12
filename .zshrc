@@ -8,7 +8,6 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle sobolevn/wakatime-zsh-plugin
 
 antigen theme avit
 
