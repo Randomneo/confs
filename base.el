@@ -7,10 +7,6 @@
 	     '("org" . "https://orgmode.org/elpa/") t)
 
 (package-initialize)
-(add-to-list 'load-path
-	     "~/.emacs.d/org-reveal/")
-(require 'ox-reveal)
-(setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-klere-theme")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/heroku-theme")
@@ -20,12 +16,25 @@
   '(progn
      (define-key company-mode-map (kbd "C-:") 'helm-company)
      (define-key company-active-map (kbd "C-:") 'helm-company)))
+;; Trigger completion immediately.
+(setq company-idle-delay 0)
+
+;; Number the candidates (use M-1, M-2 etc to select completions).
+(setq company-show-numbers t)
+
+;; Use the tab-and-go frontend.
+;; Allows TAB to select and complete at the same time.
+(company-tng-configure-default)
+(setq company-frontends
+      '(company-tng-frontend
+        company-pseudo-tooltip-frontend
+        company-echo-metadata-frontend))
 
 (setq py-autopep8-options '("--max-line-length=120"))
 (require 'py-autopep8)
 (defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi))
-
+  ; (add-to-list 'company-backends 'company-jedi))
+  (add-to-list 'company-backends #'company-tabnine))
 
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
@@ -51,6 +60,8 @@
 (require 'magit)
 (require 'evil)
 (evil-mode 1)
+(require 'evil-mc)
+(global-evil-mc-mode 1)
 
 (add-to-list 'load-path
 	     "~/.emacs.d/elpa/yasnippet-snippets-0.4/"
@@ -64,11 +75,11 @@
 ;(add-to-list
 ; 'default-frame-alist
 ; '(font . "Input Mono-11"))
-(set-default-font "Roboto Mono-11" nil t)
+;(set-default-font "Roboto Mono-11" nil t)
+(set-default-font "Mononoki-12" nil t)
 (set-face-attribute 'default nil :height 100)
 
 (require 'ace-jump-mode)
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 (require 'linum-relative)
 (linum-on)
@@ -98,8 +109,32 @@
 ;; KEYboard
 (global-set-key (kbd "C-<tab>") 'company-complete)
 (global-set-key (kbd "C-x g") 'magit-status)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+(global-set-key (kbd "<f5>") #'deadgrep)
 (with-eval-after-load "python"
   (define-key python-mode-map (kbd "C-c C-d") 'helm-pydoc))
 
 (show-paren-mode 1)
 (setq show-paren-delay 0)
+
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+;; enable this if you want `swiper' to use it
+;; (setq search-default-mode #'char-fold-to-regexp)
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "<f6>") 'ivy-resume)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "<f1> f") 'counsel-describe-function)
+(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+(global-set-key (kbd "<f1> l") 'counsel-find-library)
+(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+(global-set-key (kbd "C-c g") 'counsel-git)
+(global-set-key (kbd "C-c j") 'counsel-git-grep)
+(global-set-key (kbd "C-c k") 'counsel-ag)
+(global-set-key (kbd "C-x l") 'counsel-locate)
+(global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
+(define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
