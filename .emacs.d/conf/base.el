@@ -1,16 +1,10 @@
-(package-initialize)
 (setq-default indent-tabs-mode nil)
+(require 'cl-lib)
 (require 'package)
 (add-to-list 'package-archives
              '("melpa-stable" . "https://melpa.org/packages/") t)
 (add-to-list 'package-archives
 	     '("org" . "https://orgmode.org/elpa/") t)
-
-(package-initialize)
-(add-to-list 'load-path
-	     "~/.emacs.d/org-reveal/")
-(require 'ox-reveal)
-(setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-klere-theme")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/heroku-theme")
@@ -21,13 +15,16 @@
      (define-key company-mode-map (kbd "C-:") 'helm-company)
      (define-key company-active-map (kbd "C-:") 'helm-company)))
 
-(setq py-autopep8-options '("--max-line-length=120"))
-(require 'py-autopep8)
+;(setq py-autopep8-options '("--max-line-length=120"))
+;(require 'py-autopep8)
+(require 'fill-column-indicator)
 (defun my/python-mode-hook ()
-  (add-to-list 'company-backends 'company-jedi))
+  (add-to-list 'company-backends #'company-tabnine)
+  (add-hook 'before-save-hook 'py-isort-before-save)
+  (python-docstring-mode))
+  ;(fci-mode))
 
-(add-to-list 'load-path "~/telega.el")
-(require 'telega)
+  ;(add-to-list 'company-backends 'company-jedi))
 
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
@@ -38,23 +35,25 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+(setq web-mode-engines-alist
+      '(("django"       . "\\.html\\'")))
 
-(global-wakatime-mode)
-
+(add-hook 'python-mode-hook 'jedi:setup)
+(add-hook 'python-mode-hook 'which-func-mode)
+(add-hook 'python-mode-hook 'importmagic-mode)
 (add-hook 'python-mode-hook 'my/python-mode-hook)
 (setq jedi:complete-on-dot t)
 (add-hook 'after-init-hook 'global-company-mode)
-(company-quickhelp-mode 1)
+;(company-quickhelp-mode 1)
 ;(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-;(require 'ethan-wspace)
-;(global-ethan-wspace-mode 1)
 
 (require 'magit)
 (require 'evil)
 (evil-mode 1)
-(require 'evil-mc)
-(global-evil-mc-mode 1)
+(require 'evil-surround)
+(global-evil-surround-mode 1)
 
 (add-to-list 'load-path
 	     "~/.emacs.d/elpa/yasnippet-snippets-0.4/"
@@ -63,14 +62,17 @@
 (yas-global-mode 1)
 
 (global-flycheck-mode)
-(setq-default flycheck-flake8-maximum-line-length 10000)
+(setq-default flycheck-flake8-maximum-line-length 120)
+(setq flycheck-emacs-lisp-load-path 'inherit)
 
-;(add-to-list
-; 'default-frame-alist
-; '(font . "Input Mono-11"))
+(add-to-list
+ 'default-frame-alist
+ '(font . "JuliaMono-11"))
 ;(set-default-font "Roboto Mono-11" nil t)
-(set-default-font "Mononoki-12" nil t)
-(set-face-attribute 'default nil :height 100)
+;(set-default-font "Mononoki-12" nil t)
+;(set-face-attribute 'default nil :height 100)
+;(set-default-font "JuliaMono-12" nil t)
+
 
 (require 'ace-jump-mode)
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
@@ -97,8 +99,6 @@
 (setf rm-blacklist "")
 (sml/setup)
 (setq column-number-mode t)
-(require 'fill-column-indicator)
-(fci-mode)
 
 ;; KEYboard
 (global-set-key (kbd "C-<tab>") 'company-complete)
@@ -108,3 +108,42 @@
 
 (show-paren-mode 1)
 (setq show-paren-delay 0)
+
+
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+;; enable this if you want `swiper' to use it
+;; (setq search-default-mode #'char-fold-to-regexp)
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "<f6>") 'ivy-resume)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "<f1> f") 'counsel-describe-function)
+(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+(global-set-key (kbd "<f1> l") 'counsel-find-library)
+(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+(global-set-key (kbd "C-c g") 'counsel-git)
+(global-set-key (kbd "C-c j") 'counsel-git-grep)
+(global-set-key (kbd "C-c k") 'counsel-ag)
+(global-set-key (kbd "C-x l") 'counsel-locate)
+(global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
+(define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
+
+(global-set-key (kbd "<f5>") #'deadgrep)
+(setq-default indent-tabs-mode nil)
+(require 'edbi)
+;; In my .emacs
+(setenv "PERL5LIB" (concat "/home/rostyslav/perl5/lib/perl5" ":"
+			   (getenv "PERL5LIB")))
+(global-undo-tree-mode)
+
+(setq byte-compile-warnings '(cl-functions))
+(require 'loadhist)
+(file-dependents (feature-file 'cl))
+
+
+(venv-workon "default")
+;;; base.el ends here
