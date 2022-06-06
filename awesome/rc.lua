@@ -9,6 +9,7 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
+local lain = require("lain")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
@@ -149,8 +150,6 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
--- Create a textclock widget
-mytextclock = wibox.widget.textclock()
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -210,6 +209,8 @@ end
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
+local tb1 = wibox.widget.textbox('test box---------------------------------------------------')
+
 awful.screen.connect_for_each_screen(function(s)
       -- Wallpaper
       set_wallpaper(s)
@@ -235,6 +236,29 @@ awful.screen.connect_for_each_screen(function(s)
 
       -- Create the wibox
       s.mywibox = awful.wibar({ position = "top", screen = s })
+      s.wibox2 = awful.popup{
+         widget = {
+            {
+               {
+                  format = "<span font=\"Libre 50\">%I:%M %p</span>",
+                  widget = wibox.widget.textclock,
+               },
+               {
+                  format = "<span font=\"Libre 20\">%A %B</span>",
+                  widget = wibox.widget.textclock,
+               },
+               layout = wibox.layout.fixed.vertical,
+            },
+            bottom = s.geometry.height*0.12,
+            right = s.geometry.width*0.12,
+            widget = wibox.container.margin,
+         },
+         screen = s,
+         placement = awful.placement.bottom_right,
+         bg = "",
+         fg = "#eaecfc",
+      }
+
 
       -- Add widgets to the wibox
       s.mywibox:setup {
@@ -249,7 +273,10 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
-            mytextclock,
+            {
+               format="%I:%M %p",
+               widget=wibox.widget.textclock,
+            },
             s.mylayoutbox,
 	 },
       }
