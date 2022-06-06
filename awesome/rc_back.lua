@@ -45,8 +45,8 @@ end
 beautiful.init(gears.filesystem.get_dir("config") .. "themes/default/theme.lua")
 
 -- Naughty presets
-naughty.config.defaults.font = "Liberation 12"
-naughty.config.defaults.icon_size = 24
+naughty.config.defaults.font = "Roboto 12"
+naughty.config.defaults.icon_size = 32
 naughty.config.defaults.fg = beautiful.fg_tooltip
 naughty.config.defaults.bg = beautiful.bg_tooltip
 -- naughty.config.defaults.hover_timeout =
@@ -62,7 +62,7 @@ terminal = "urxvt"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 gui_editor = "emacs"
-browser = "brave"
+browser = "chromium-browser"
 screenlocker = "i3lock"
 
 
@@ -445,8 +445,7 @@ for i = 1, 9 do
 	       tag:view_only()
 	    end
 	 end,
-	 {description = "view tag #"..i, group = "tag"}
-      ),
+	 {description = "view tag #"..i, group = "tag"}),
       -- Toggle tag display.
       awful.key({ modkey, "Control" }, "#" .. i + 9,
 	 function ()
@@ -456,8 +455,7 @@ for i = 1, 9 do
 	       awful.tag.viewtoggle(tag)
 	    end
 	 end,
-	 {description = "toggle tag #" .. i, group = "tag"}
-      ),
+	 {description = "toggle tag #" .. i, group = "tag"}),
       -- Move client to tag.
       awful.key({ modkey, "Shift" }, "#" .. i + 9,
 	 function ()
@@ -468,8 +466,7 @@ for i = 1, 9 do
 	       end
 	    end
 	 end,
-	 {description = "move focused client to tag #"..i, group = "tag"}
-      ),
+	 {description = "move focused client to tag #"..i, group = "tag"}),
       -- Toggle tag on focused client.
       awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
 	 function ()
@@ -480,16 +477,14 @@ for i = 1, 9 do
 	       end
 	    end
 	 end,
-	 {description = "toggle focused client on tag #" .. i, group = "tag"}
-      )
+	 {description = "toggle focused client on tag #" .. i, group = "tag"})
    )
 end
 
 clientbuttons = gears.table.join(
    awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
    awful.button({ modkey }, 1, awful.mouse.client.move),
-   awful.button({ modkey }, 3, awful.mouse.client.resize)
-)
+   awful.button({ modkey }, 3, awful.mouse.client.resize))
 
 -- Set keys
 root.keys(globalkeys)
@@ -499,93 +494,68 @@ root.keys(globalkeys)
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
    -- All clients will match this rule.
-   {
-      rule = { },
-      properties = {
-         border_width = beautiful.border_width,
-         border_color = beautiful.border_normal,
-         focus = awful.client.focus.filter,
-         raise = true,
-         keys = clientkeys,
-         buttons = clientbuttons,
-         screen = awful.screen.preferred,
-         placement = awful.placement.no_overlap+awful.placement.no_offscreen
-      }
+   { rule = { },
+     properties = { border_width = beautiful.border_width,
+		    border_color = beautiful.border_normal,
+		    focus = awful.client.focus.filter,
+		    raise = true,
+		    keys = clientkeys,
+		    buttons = clientbuttons,
+		    screen = awful.screen.preferred,
+		    placement = awful.placement.no_overlap+awful.placement.no_offscreen
+     }
    },
 
    -- Floating clients.
-   {
-      rule_any = {
-         instance = {
-            "DTA",  -- Firefox addon DownThemAll.
-            "copyq",  -- Includes session name in class.
-         },
-         class = {
-            "Arandr",
-            "Gpick",
-            "Kruler",
-            "MessageWin",  -- kalarm.
-            "Sxiv",
-            "Wpa_gui",
-            "pinentry",
-            "veromix",
-            "xtightvncviewer",
-         },
+   { rule_any = {
+        instance = {
+	   "DTA",  -- Firefox addon DownThemAll.
+	   "copyq",  -- Includes session name in class.
+        },
+        class = {
+	   "Arandr",
+	   "Gpick",
+	   "Kruler",
+	   "MessageWin",  -- kalarm.
+	   "Sxiv",
+	   "Wpa_gui",
+	   "pinentry",
+	   "veromix",
+	   "xtightvncviewer"},
 
-         name = {
-            "Event Tester",  -- xev.
-         },
-         role = {
-            "AlarmWindow",  -- Thunderbird's calendar.
-            "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
-         },
-      },
-      properties = {
-         floating = true,
-         placement = awful.placement.centered,
-      }
-   },
+        name = {
+	   "Event Tester",  -- xev.
+        },
+        role = {
+	   "AlarmWindow",  -- Thunderbird's calendar.
+	   -- "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+        }
+   }, properties = { floating = true }},
 
    -- Add titlebars to normal clients and dialogs
-   {
-      rule_any = {
-         type = { "normal", "dialog" }
-      },
-      properties = {
-         titlebars_enabled = true,
-         placement = awful.placement.centered,
-      },
+   { rule_any = {type = { "normal", "dialog" }
+		}, properties = { titlebars_enabled = true }
    },
-   {
-      rule_any = {
-         class = {
-            "Nm-connection-editor",
-            "Pavucontrol",
-         },
-      },
-      properties = {
-         floating = true,
-         placement = awful.placement.centered,
-      },
-   },
+
+   -- Set Firefox to always map on the tag named "2" on screen 1.
+   -- { rule = { class = "Firefox" },
+   --   properties = { screen = 1, tag = "2" } },
 }
 -- }}}
 
 -- {{{ Signals
 -- Signal function to execute when a new client appears.
-client.connect_signal(
-   "manage",
-   function (c)
-      -- Set the windows at the slave,
-      -- i.e. put it at the end of others instead of setting it master.
-      -- if not awesome.startup then awful.client.setslave(c) end
+client.connect_signal("manage", function (c)
+			 -- Set the windows at the slave,
+			 -- i.e. put it at the end of others instead of setting it master.
+			 -- if not awesome.startup then awful.client.setslave(c) end
 
-      if awesome.startup and
-         not c.size_hints.user_position
-         and not c.size_hints.program_position then
-         -- Prevent clients from being unreachable after screen count changes.
-         awful.placement.no_offscreen(c)
-      end
+			 if awesome.startup and
+			    not c.size_hints.user_position
+			 and not c.size_hints.program_position then
+			    -- Prevent clients from being unreachable after screen count changes.
+			    awful.placement.no_offscreen(c)
+			 end
 end)
 
 --[[

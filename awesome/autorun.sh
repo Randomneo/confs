@@ -7,7 +7,5 @@ function run {
   fi
 }
 
-run pidgin
-run thunderbird
 run pasystray
 run nm-applet
