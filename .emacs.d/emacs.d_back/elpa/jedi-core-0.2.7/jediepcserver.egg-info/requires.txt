@@ -1,4 +1,0 @@
-argparse
-autopep8
-epc>=0.0.4
-jedi>=0.8.1
