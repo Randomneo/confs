@@ -43,10 +43,10 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_dir("config") .. "themes/default/theme.lua")
+beautiful.init(gears.filesystem.get_dir("config") .. "themes/my/theme.lua")
 
 -- Naughty presets
-naughty.config.defaults.font = "Liberation 12"
+naughty.config.defaults.font = "Liberation Sans 12"
 naughty.config.defaults.icon_size = 24
 naughty.config.defaults.fg = beautiful.fg_tooltip
 naughty.config.defaults.bg = beautiful.bg_tooltip
@@ -234,8 +234,8 @@ awful.screen.connect_for_each_screen(function(s)
       -- Create a tasklist widget
       s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, tasklist_buttons)
 
+
       -- Create the wibox
-      s.mywibox = awful.wibar({ position = "top", screen = s })
       s.wibox2 = awful.popup{
          widget = {
             {
@@ -259,26 +259,43 @@ awful.screen.connect_for_each_screen(function(s)
          fg = "#eaecfc",
       }
 
+      separator = wibox.widget.separator{
+         forced_width = 20,
+         opacity = 0,
+      }
 
-      -- Add widgets to the wibox
-      s.mywibox:setup {
-	 layout = wibox.layout.align.horizontal,
-	 { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
-            s.mytaglist,
-            s.mypromptbox,
-	 },
-	 s.mytasklist, -- Middle widget
-	 { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
-            wibox.widget.systray(),
-            {
-               format="%I:%M %p",
-               widget=wibox.widget.textclock,
+
+      s.mywibox = awful.wibar{
+         position = "top",
+         screen = s,
+         widget = wibox.widget{
+            { -- Left widgets
+               layout = wibox.layout.fixed.horizontal,
+               separator,
+               s.mytaglist,
+               s.mypromptbox,
+               separator,
             },
-            s.mylayoutbox,
-	 },
+            s.mytasklist, -- Middle widget
+            { -- Right widgets
+               layout = wibox.layout.fixed.horizontal,
+               separator,
+               mykeyboardlayout,
+               separator,
+               {
+                  widget=wibox.widget.systray,
+               },
+               separator,
+               {
+                  format="%I:%M %p",
+                  widget=wibox.widget.textclock,
+               },
+               separator,
+               s.mylayoutbox,
+               separator,
+            },
+            layout = wibox.layout.align.horizontal,
+         },
       }
 end)
 -- }}}

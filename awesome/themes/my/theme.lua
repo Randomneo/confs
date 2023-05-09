@@ -11,11 +11,11 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "Roboto 11"
+theme.font          = "Deja Vu Sans 10"
 
-theme.bg_normal     = "#333333"
-theme.bg_focus      = "#163870"
-theme.bg_urgent     = "#ff0000"
+theme.bg_normal     = "#2f0d4a"
+theme.bg_focus      = "#4a097f"
+theme.bg_urgent     = "#f47373"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 theme.bg_tooltip    = "#eeeeee"
@@ -29,7 +29,7 @@ theme.fg_tooltip    = "#222222"
 theme.useless_gap   = dpi(5)
 theme.border_width  = dpi(1)
 theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
+theme.border_focus  = "#482b60"
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
@@ -53,6 +53,7 @@ theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
     taglist_square_size, theme.fg_normal
 )
+theme.wibar_margins = 100
 
 -- Variables set for theming notifications:
 -- notification_font
@@ -99,7 +100,7 @@ theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar
 theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "~/wallpapers/background.png"
+theme.wallpaper = "~/wallpaper/background.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
