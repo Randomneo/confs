@@ -1,0 +1,13 @@
+[user]
+	name = Rostislav Misiura
+	email = rostislav9999@gmail.com
+
+[includeIf "gitdir:~/projects/$PROJECT_SUBDIR/"]
+  path = ~/projects/$PROJECT_SUBDIR/.gitconfig_include
+[pull]
+	rebase = false
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
