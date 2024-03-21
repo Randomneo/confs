@@ -16,6 +16,7 @@ antigen theme avit
 antigen apply
 
 export ZSH="/home/randomneo/.oh-my-zsh"
+export TERM=xterm-256color
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -90,7 +91,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -114,12 +115,6 @@ source $ZSH/oh-my-zsh.sh
 # kubectl outo complete
 source <(kubectl completion zsh)
 
-alias pm="python manage.py"
-alias venv="source .env/bin/activate"
-alias pmr="python manage.py runserver"
-alias pmt="python manage.py test"
-alias pmmkmr="python manage.py makemigrations"
-alias pmmr="python manage.py migrate"
 alias dcu="docker-compose up"
 alias dcuu="docker-compose up -d"
 alias dcd="docker-compose down"
@@ -127,16 +122,21 @@ alias dcb="docker-compose build"
 alias docom="docker-compose"
 alias dcr="docker-compose restart"
 alias dce="docker-compose exec"
-alias meos="ssh meosand"
+alias docker-stop="docker ps -a -q | xargs docker stop > /dev/null"
 bindkey "^P" up-line-or-search
 bindkey "^N" down-line-or-search
 
 
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
+if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
+    exec tmux new-session -A -s ${USER} >/dev/null 2>&1
+fi
 
 neofetch
 
+export VIRTUALENVWRAPPER_WORKON_CD=1
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 workon default
+
+export PATH="${PATH}:${HOME}/.krew/bin:${HOME}/.cargo/bin"
+# end of .zshrc

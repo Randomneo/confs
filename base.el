@@ -6,17 +6,25 @@
 (add-to-list 'load-path
  	     "~/.emacs.d/custom/")
 
-(require 'pyvenv)
-;(require 'web-mode)
+(setq evil-want-keybinding nil)
+(require 'evil-collection)
 (require 'evil)
 (require 'evil-surround)
+(evil-collection-init)
+
+(require 'magit)
+;(require 'web-mode)
 (require 'yasnippet)
 (require 'flyspell-correct-ivy)
-(require 'ace-jump-mode)
 (require 'ido)
 (require 'init)
+(require 'virtualenvwrapper)
+;(require 'python-ts-mode)
+(require 'python)
+(require 'rust-mode)
+(require 'lsp)
 
-;;; WEBMODE --------------------------------
+;;; MODE-ALISTS ----------------------------
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mako\\'" . web-mode))
@@ -27,35 +35,47 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
-(setq web-mode-engines-alist
-      '(("django"       . "\\.html\\'")))
+(defvar web-mode-engines-alist
+      '(("django" . "\\.html\\'")))
+(add-to-list 'auto-mode-alist '("\\.toml\\'" . toml-ts-mode))
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-ts-mode))
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-ts-mode))
 
+(add-hook 'rust-mode-hook #'lsp)
 
 ;;; PYTHON ---------------------------------
-(setq jedi:complete-on-dot t)
+(defvar jedi:complete-on-dot t)
 
-(pyvenv-workon "default")
+(venv-workon "default")
+
+(defun auto-venv ()
+  (venv-workon (file-name-nondirectory (directory-file-name (projectile-project-root)))))
+
 
 (defun my/python-mode-hook ()
-  ;(python-black-on-save-mode)
-  (add-hook 'before-save-hook 'py-isort-before-save)
+  (isortify-mode)
   (python-docstring-mode)
   (add-to-list 'company-backends 'company-jedi)
-  ;(which-function-mode t)
-  (define-key python-mode-map (kbd "C-c t") 'python-pytest-dispatch)
-  (define-key python-mode-map (kbd "C-c b") 'python-jump-to-current-classdef)
-  (define-key python-mode-map (kbd "C-c C-d") 'helm-pydoc))
+  (which-function-mode t)
+  (importmagic-mode)
+  (jedi:setup))
 
-(add-hook 'python-mode-hook 'importmagic-mode)
-(add-hook 'python-mode-hook 'my/python-mode-hook)
-(add-hook 'python-mode-hook 'jedi:setup)
+(define-key python-ts-mode-map "\C-ct" 'python-pytest-dispatch)
+; (define-key python-ts-mode-map "\C-c." 'jedi:goto-definition)
+; (define-key python-ts-mode-map "\C-c," 'jedi:goto-definition-pop-marker)
+(define-key python-mode-map "\C-ct" 'python-pytest-dispatch)
+; (define-key comint-mode-map "\C-p" 'comint-previous-input)
+; (define-key comint-mode-map "\C-n" 'comint-next-input)
+; (add-hook 'python-mode-hook 'my/python-mode-hook)
+; (add-hook 'python-ts-mode-hook 'my/python-mode-hook)
+(add-hook 'python-mode-hook #'lsp)
+(add-hook 'python-ts-mode-hook #'lsp)
 
 
 ;;; GLOBAL ---------------------------------
 (setq-default indent-tabs-mode nil)
-(setq-default flycheck-flake8-maximum-line-length 120)
 (setq read-file-name-completion-ignore-case t)
-(setq flycheck-emacs-lisp-load-path 'inherit)
+(defvar flycheck-emacs-lisp-load-path 'inherit)
 (setq column-number-mode t)
 (setq show-paren-delay 0)
 (setq ivy-use-virtual-buffers t)
@@ -74,7 +94,7 @@
 
 (add-to-list
  'default-frame-alist
- '(font . "Mononoki 10"))
+ '(font . "Mononoki 14"))
  ;'(font . "Liberation Mono 10"))
  ;'(font . "JuliaMono-10"))
 ;(set-default-font "Roboto Mono-11" nil t)
@@ -121,7 +141,21 @@
 
 (global-set-key (kbd "<f5>") #'deadgrep)
 
+; (add-to-list 'auto-mode-alist '("\\.py\\'" . python-ts-mode))
+
+;; FLYCHECK
+
+(defvar-local my/flycheck-local-cache nil)
+
+(defun my/flycheck-checker-get (fn checker property)
+  (or (alist-get property (alist-get checker my/flycheck-local-cache))
+      (funcall fn checker property)))
+
+(advice-add 'flycheck-checker-get :around 'my/flycheck-checker-get)
+
+(add-hook 'lsp-managed-mode-hook
+          (lambda ()
+            (when (derived-mode-p 'python-mode)
+              (setq my/flycheck-local-cache '((lsp . ((next-checkers . (python-mypy python-flake8)))))))))
+
 ;;; base.el ends here
-
-
-(require 'magit)
