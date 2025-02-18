@@ -1,5 +1,0 @@
-[format]
-quote-style = "single"
-
-[lint.isort]
-force-single-line = true
